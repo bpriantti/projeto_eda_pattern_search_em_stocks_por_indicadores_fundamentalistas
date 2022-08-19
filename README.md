@@ -12,3 +12,7 @@ Features targets:
 implementar separação por setor.  
 monitorar situacao de juros  
 indices ibovespa e sp500  
+
+
+obs:
+pendente base de dados -> ano 
