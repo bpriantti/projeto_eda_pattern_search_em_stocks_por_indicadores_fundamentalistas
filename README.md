@@ -1,0 +1,1 @@
+# projeto_eda_pattern_search_stocks_indicadores_fundamentalistas
