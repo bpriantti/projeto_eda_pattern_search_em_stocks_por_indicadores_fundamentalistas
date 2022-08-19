@@ -1,1 +1,1 @@
-# projeto_eda_pattern_search_stocks_indicadores_fundamentalistas
+# Projeto EDA Pattern Search Stocks Indicadores Fundamentalistas.
