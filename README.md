@@ -1,1 +1,1 @@
-# Projeto EDA Pattern Search Stocks Indicadores Fundamentalistas.
+# Projeto EDA Pattern Search em Stocks por Indicadores Fundamentalistas.
