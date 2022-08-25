@@ -153,3 +153,6 @@ obs: base de fechamentos foi normalizada para a base 100.
 
    > <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_8.png?raw=true"  width="700" height = "400">
 
+__6 - wralling bases:__ alinhamento de tickers base de indicadores fundamentalistas e base com série de fechamentos:
+
+Durante o procedimento de wralling foram removidos ticker
