@@ -123,6 +123,6 @@ __2 - data wralling:__ base com preco de fechamentos das empresas:
 
 Inicialmente verificou-se a quantidade de dados faltantes na base de dados, utilizando o metodo de heatmap por nan's:
 
-<img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_3.png?raw=true"  width="800" height = "250">
+
 
 
