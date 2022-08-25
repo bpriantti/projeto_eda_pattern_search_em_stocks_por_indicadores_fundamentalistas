@@ -42,7 +42,7 @@ __2 - data wralling:__
 
 > Observou-se que a base possui uma série de dados faltantes listados com o valor 0, então a partir desse ponto substitui-se os valores e realizou-se uma análise visual da integridade dos dados por meio de um gráfico de heatmap, como demonstrado na imagem abaixo no campo (base before wralling) para solução desse defeito de market data realizou-se a técnica de 'dropna()' utilizando o parâmetro thresh, setado em um valor de 17, ou seja só sobreviveram as colunas que possuírem no mínimo 17 valores sem ser o valor nan(nulo), a imagem abaixo mostra o resultado antes e depois para a base de dados.
 
-   <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_1.png?raw=true"  width="800" height = "250">
+   > <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_1.png?raw=true"  width="800" height = "250">
 
 __3 - inspect colunas dataframe:__
 
@@ -88,7 +88,7 @@ __4 - data visualization:__ base com indicadores fundamentalistas:
 
 Visualizando distribuição dos indicadores para todas as empresas:
 
-   <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_2.png?raw=true"  width="800" height = "500">
+   > <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_2.png?raw=true"  width="800" height = "500">
 
 __5 - load data base:__ performance próximos anos das empresas:
 
@@ -124,17 +124,32 @@ __2 - data wralling:__ base com preco de fechamentos das empresas:
 - removendo nan's:
 > Inicialmente verificou-se a quantidade de dados faltantes na base de dados, utilizando o metodo de heatmap por nan's e foram removidas as colunas com o dados faltantes, como ilustrado abaixo:
 
-   <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_3.png?raw=true"  width="800" height = "250">
+   > <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_3.png?raw=true"  width="800" height = "250">
 
 - removendo defeitos de market data:
 > Em seguida verificou-se dados com inconformidade de de atualização diária pelo provedor de dados, podemos visualizar nas ações com muitos dias com o mesmo preço pela imagem abaixo:
 
-   <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_4.png?raw=true"  width="700" height = "400">
+   > <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_4.png?raw=true"  width="700" height = "400">
 
 > Normalmente visualizamos spikes de preços excessivos no momento em que o provedor de dados atualiza bases que estavam desatualizadas a dias, vamos verificar isso com um boxplot do retorno de todas as ações da base:
 
-   <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_5.png?raw=true"  width="700" height = "400">
+   > <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_5.png?raw=true"  width="700" height = "400">
    
 > Em seguida visualizou-se os tickers que possuíam spikes acima de 2 ou -2, e grande parte deles possuía defeitos de market data mencionados, optou-se por remover esses tickers com dados defeituosos, observando a base novamente verificamos que os dados não possuíam mais dados com defeitos de market data por spikes defeituosos.
 
+   > <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_6.png?raw=true"  width="700" height = "400">
+
+- removendo defeitos de atualizacoes e dias seguidos:
+
+> Verificou-se na base defeitos de dias seguidos, sabemos que por características das ações em momentos de baixa volatilidade os preços tendem a oscilar menos no entanto o defeito de dias seguidos pode ser definido com um range alto de dias por exemplo 20 dias sem atualizações de preço, isso provavelmente pode ser um defeito de market data, portanto desenvolveu-se uma função para verificar essas ocorrências e mostra-se o resultado na figura abaixo:
+
+   > <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_7.png?raw=true"  width="700" height = "400">
+   
+obs: optou-se por remover esses tickers defeituosos.
+
+- visualizando a base apos o processo de wralling:
+
+obs: base de fechamentos foi normalizada para a base 100.
+
+   > <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_8.png?raw=true"  width="700" height = "400">
 
