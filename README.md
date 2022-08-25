@@ -178,3 +178,18 @@ __7 - exploratory data analisys:__
 
 __Resultado:__
 
+Tabela de rank:
+
+   > <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_10.PNG?raw=true"  width="500" height = "600">
+
+> A partir da analise do rank, podemos classificar o seguinde label caso os indicadores fundamentalistas estejam nos clusters:
+
+| Clusters          | Label                 | Descrição
+| -------           | --------              |---------
+| 15, 1             | Alto RiscoxRetorno    | Mais que 50% das empresas com indicadores nessa região foram positivas nos próximos 10 trimestres com alta volatilidade
+| 6,10,13,19,17     | Retorno Positivo e Baixa Volatilidade   | Menos do que 2% das empresas listadas nesses clusters tendem a ter retornos negativos após 10 trimestres.
+| 0 2 4 5 7 9 11 12 | Potencial Retorno Negativo              | Menos do que 2% das empresas listadas nesses clusters tiveram retorno positivo em 10 trimestres.
+
+__Trabalho futuros e conclusões:__
+
+Podemos observar que a análise exploratória de dados por clusterização nos permite ter bons insights sobre qual empresas realizar o processo de alocação, mesmo com inúmeros defeitos de market data nas bases de dados, como trabalho futuro seria interessante dispor de uma base de dados com a série histórica de indicadores fundamentalistas nos permitindo realizar o processo de backtesting para mais períodos isso agrupado a alocação de portfólios pode melhorar os resultados de performance em investimentos em renda variável outro ponto interessante seria uma agrupamento por market cap e setores da economia nos permitindo encontrar características em comum e padrões nos indicadores fundamentalistas de empresas que apresentam o crescimento e sobrevivência no longo prazo.
