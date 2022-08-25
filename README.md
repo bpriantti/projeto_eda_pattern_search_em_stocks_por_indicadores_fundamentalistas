@@ -40,7 +40,11 @@ __1 - import database:__
 
 __2 - data wralling:__
 
-> Observou-se que a base possui uma série de dados faltantes listados com o valor 0, então a partir desse ponto substitui-se os valores e realizou-se uma análise visual da integridade dos dados por meio de um gráfico de heatmap, como demostrao na imagem abaixo:
+> Observou-se que a base possui uma série de dados faltantes listados com o valor 0, então a partir desse ponto substitui-se os valores e realizou-se uma análise visual da integridade dos dados por meio de um gráfico de heatmap, como demonstrado na imagem abaixo no campo (base before wralling) para solução desse defeito de market data realizou-se a técnica de 'dropna()' utilizando o parâmetro thresh, setado em um valor de 17, ou seja só sobreviveram as colunas que possuírem no mínimo 17 valores sem ser o valor nan(nulo), a imagem abaixo mostra o resultado antes e depois para a base de dados.
+
+imagem!
+
+
 
 
 Index(['Papel', 'Cotação', 'P/L', 'P/VP', 'PSR', 'Div.Yield', 'P/Ativo',
