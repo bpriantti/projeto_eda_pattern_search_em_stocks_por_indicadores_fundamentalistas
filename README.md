@@ -157,7 +157,7 @@ __6 - wralling bases:__ alinhamento de tickers base de indicadores fundamentalis
 
 > Durante o procedimento de wralling foram removidos tickers da base com série de fechamentos, torna-se necessário o alinhamento entre informações para isso criou-se uma base com os dados dos indicadores fundamentalistas apenas para as ações que não possuem defeitos de market data na base com a série de fechamentos.
 
-__7 - exploratory data analisys:
+__7 - exploratory data analisys:__
 
 > para o projeto optou-se por realizar o pattern search utilizando algum algoritmo de clusterização não supervisionado usou-se o k-means, foram realizados os procedimento de 'min max scaller' para a base e em seguida aplicou-se o método conhecido como "elbow method" para o número de clusters para o algoritmo.
 
