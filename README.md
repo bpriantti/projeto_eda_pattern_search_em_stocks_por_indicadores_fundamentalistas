@@ -135,4 +135,6 @@ __2 - data wralling:__ base com preco de fechamentos das empresas:
 
    <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_5.png?raw=true"  width="700" height = "400">
    
-> Em seguida visualizou-se os tickers que possuíam spikes acima de 2 ou -2, e grande parte deles possuía defeitos de market data mencionados, optou-se por remover esses tickers com dados defeituosos.
+> Em seguida visualizou-se os tickers que possuíam spikes acima de 2 ou -2, e grande parte deles possuía defeitos de market data mencionados, optou-se por remover esses tickers com dados defeituosos, observando a base novamente verificamos que os dados não possuíam mais dados com defeitos de market data por spikes defeituosos.
+
+
