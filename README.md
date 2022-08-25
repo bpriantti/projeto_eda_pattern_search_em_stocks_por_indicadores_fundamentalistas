@@ -86,7 +86,43 @@ Index(['P/L', 'P/VP', 'PSR', 'Div.Yield', 'P/Ativo','P/Cap.Giro', 'P/EBIT', 'P/A
 
 __4 - data visualization:__ base com indicadores fundamentalistas:
 
-visualizando distribuicao dos indicadores para todas as empresas:
+Visualizando distribuição dos indicadores para todas as empresas:
 
-<img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_2.png?raw=true"  width="800" height = "550">
+<img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_2.png?raw=true"  width="800" height = "500">
+
+__5 - load data base:__ performance próximos anos das empresas:
+
+Os dados das empresas foram baixados via api-request do provedor yfinance, no processo de coleta de dados verificou-se que alguns tickers nao estavam disponiveis na plataforma estes sao:
+
+23 Failed downloads:
+- LAME4.SA: No data found, symbol may be delisted
+- GNDI3.SA: No data found, symbol may be delisted
+- GPCP3.SA: No data found, symbol may be delisted
+- BRDT3.SA: No data found, symbol may be delisted
+- FIBR3.SA: No data found for this date range, symbol may be delisted
+- CCPR3.SA: No data found, symbol may be delisted
+- VIVT4.SA: No data found, symbol may be delisted
+- CESP3.SA: No data found, symbol may be delisted
+- PNVL4.SA: No data found, symbol may be delisted
+- RANI4.SA: No data found, symbol may be delisted
+- CESP5.SA: No data found, symbol may be delisted
+- JPSA3.SA: No data found, symbol may be delisted
+- LAME3.SA: No data found, symbol may be delisted
+- DTEX3.SA: No data found, symbol may be delisted
+- TIET11.SA: No data found, symbol may be delisted
+- CESP6.SA: No data found, symbol may be delisted
+- HGTX3.SA: No data found, symbol may be delisted
+- ELEK4.SA: No data found, symbol may be delisted
+- ELEK3.SA: No data found, symbol may be delisted
+- IGTA3.SA: No data found, symbol may be delisted
+- TIET3.SA: No data found, symbol may be delisted
+- TIET4.SA: No data found, symbol may be delisted
+- WSON33.SA: No data found, symbol may be delisted
+
+__2 - data wralling:__ base com preco de fechamentos das empresas:
+
+Inicialmente verificou-se a quantidade de dados faltantes na base de dados, utilizando o metodo de heatmap por nan's:
+
+<img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_3.png?raw=true"  width="800" height = "250">
+
 
