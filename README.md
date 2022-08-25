@@ -157,10 +157,13 @@ __6 - wralling bases:__ alinhamento de tickers base de indicadores fundamentalis
 
 > Durante o procedimento de wralling foram removidos tickers da base com série de fechamentos, torna-se necessário o alinhamento entre informações para isso criou-se uma base com os dados dos indicadores fundamentalistas apenas para as ações que não possuem defeitos de market data na base com a série de fechamentos.
 
+   > <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_11.png?raw=true"  width="700" height = "400">
 __7 - exploratory data analisys:__
 
-> para o projeto optou-se por realizar o pattern search utilizando algum algoritmo de clusterização não supervisionado usou-se o k-means, foram realizados os procedimento de 'min max scaller' para a base e em seguida aplicou-se o método conhecido como "elbow method" para o número de clusters para o algoritmo.
+> para o projeto optou-se por realizar o pattern search utilizando algum algoritmo de clusterização não supervisionado usou-se o k-means, foram realizados os procedimento de 'min max scaller' para a base como demostrado na imagem abaixo, e em seguida aplicou-se o método conhecido como "elbow method" para o número de clusters para o algoritmo.
 
+   > <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_5.png?raw=true"  width="700" height = "400">
+  
 - Elbow method:  
 
 > Utilizou-se o método de elbow method para verificar o número de clusters necessário, verificou-se que clusters entre 15 e 20 demonstraram bons resultados de agrupamento:
@@ -192,4 +195,4 @@ Tabela de rank:
 
 __Trabalho futuros e conclusões:__
 
-Podemos observar que a análise exploratória de dados por clusterização nos permite ter bons insights sobre qual empresas realizar o processo de alocação, mesmo com inúmeros defeitos de market data nas bases de dados, como trabalho futuro seria interessante dispor de uma base de dados com a série histórica de indicadores fundamentalistas nos permitindo realizar o processo de backtesting para mais períodos isso agrupado a alocação de portfólios pode melhorar os resultados de performance em investimentos em renda variável outro ponto interessante seria uma agrupamento por market cap e setores da economia nos permitindo encontrar características em comum e padrões nos indicadores fundamentalistas de empresas que apresentam o crescimento e sobrevivência no longo prazo.
+> Podemos observar que a análise exploratória de dados por clusterização nos permite ter bons insights sobre qual empresas realizar o processo de alocação, mesmo com inúmeros defeitos de market data nas bases de dados, como trabalho futuro seria interessante dispor de uma base de dados com a série histórica de indicadores fundamentalistas nos permitindo realizar o processo de backtesting para mais períodos isso agrupado a alocação de portfólios pode melhorar os resultados de performance em investimentos em renda variável outro ponto interessante seria uma agrupamento por market cap e setores da economia nos permitindo encontrar características em comum e padrões nos indicadores fundamentalistas de empresas que apresentam o crescimento e sobrevivência no longo prazo.
