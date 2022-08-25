@@ -42,7 +42,7 @@ __2 - data wralling:__
 
 > Observou-se que a base possui uma série de dados faltantes listados com o valor 0, então a partir desse ponto substitui-se os valores e realizou-se uma análise visual da integridade dos dados por meio de um gráfico de heatmap, como demonstrado na imagem abaixo no campo (base before wralling) para solução desse defeito de market data realizou-se a técnica de 'dropna()' utilizando o parâmetro thresh, setado em um valor de 17, ou seja só sobreviveram as colunas que possuírem no mínimo 17 valores sem ser o valor nan(nulo), a imagem abaixo mostra o resultado antes e depois para a base de dados.
 
-<img src="https://github.com/bpriantti/Projeto_ML_clustering_k_means_asset_allocation/blob/main/images/image-1.png?raw=true"  width="600">
+<img src="https://github.com/bpriantti/Projeto_ML_clustering_k_means_asset_allocation/blob/main/images/image-1.png?raw=true"  width="1000" height = "600">
 
 
 Index(['Papel', 'Cotação', 'P/L', 'P/VP', 'PSR', 'Div.Yield', 'P/Ativo',
