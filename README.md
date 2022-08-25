@@ -155,4 +155,26 @@ obs: base de fechamentos foi normalizada para a base 100.
 
 __6 - wralling bases:__ alinhamento de tickers base de indicadores fundamentalistas e base com série de fechamentos:
 
-Durante o procedimento de wralling foram removidos ticker
+> Durante o procedimento de wralling foram removidos tickers da base com série de fechamentos, torna-se necessário o alinhamento entre informações para isso criou-se uma base com os dados dos indicadores fundamentalistas apenas para as ações que não possuem defeitos de market data na base com a série de fechamentos.
+
+__7 - exploratory data analisys:
+
+> para o projeto optou-se por realizar o pattern search utilizando algum algoritmo de clusterização não supervisionado usou-se o k-means, foram realizados os procedimento de 'min max scaller' para a base e em seguida aplicou-se o método conhecido como "elbow method" para o número de clusters para o algoritmo.
+
+- Elbow method:  
+
+> Utilizou-se o método de elbow method para verificar o número de clusters necessário, verificou-se que clusters entre 15 e 20 demonstraram bons resultados de agrupamento:
+
+   > <img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_9.png?raw=true"  width="700" height = "400">
+
+- Resultado Clustering:
+
+> Como possuímos mais de 3 dimensões na nossa base de dados não é possível visualizar os clusters, anexou-se os clusters ao dataset dos indicadores fundamentalistas e realizou-se um processo de __análise bivariada__ verificando e agrupando os clusters por em ordem crescente por retorno futuro e Retorno positivo categórico em 10 trimestres.
+
+- Retorno futuro (performance na série de fechamentos das empresas).
+- Volatilidade anualizada.
+- Retorno positivo categórico em 10 trimestres ( 1 - retorno positivo, 0 - retorno negativo)
+- Retorno negativo categórico em 10 trimestres ( 1 - retorno negativo, 0 - retorno positivo)
+
+__Resultado:__
+
