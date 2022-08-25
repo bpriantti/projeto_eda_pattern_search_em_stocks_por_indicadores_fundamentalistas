@@ -121,8 +121,15 @@ Os dados das empresas foram baixados via api-request do provedor yfinance, no pr
 
 __2 - data wralling:__ base com preco de fechamentos das empresas:
 
-Inicialmente verificou-se a quantidade de dados faltantes na base de dados, utilizando o metodo de heatmap por nan's:
+- removendo nan's:
+> Inicialmente verificou-se a quantidade de dados faltantes na base de dados, utilizando o metodo de heatmap por nan's e foram removidas as colunas com o dados faltantes, como ilustrado abaixo:
 
+<img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_3.png?raw=true"  width="800" height = "250">
+
+- removendo defeitos de market data:
+> Em seguida verificou-se dados com informidade de de atualizacao diaria pelo provedor de dados, podemos visualizar nas acoes com muitos dias com o mesmo preco pela imagem abaixo:
+
+<img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_4.png?raw=true"  width="800" height = "250">
 
 
 
