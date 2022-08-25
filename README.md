@@ -86,3 +86,7 @@ Index(['P/L', 'P/VP', 'PSR', 'Div.Yield', 'P/Ativo','P/Cap.Giro', 'P/EBIT', 'P/A
 
 __4 - data visualization:__ base com indicadores fundamentalistas:
 
+visualizando distribuicao dos indicadores para todas as empresas:
+
+<img src="https://github.com/bpriantti/projeto_eda_pattern_search_em_stocks_por_indicadores_fundamentalistas/blob/main/images/image_2.png?raw=true"  width="800" height = "550">
+
