@@ -190,8 +190,8 @@ Tabela de rank:
 | Clusters          | Label                 | Descrição
 | -------           | --------              |---------
 | 15, 1             | Alto RiscoxRetorno    | Mais que 50% das empresas com indicadores nessa região foram positivas nos próximos 10 trimestres com alta volatilidade
-| 6,10,13,19,17     | Retorno Positivo e Baixa Volatilidade   | Menos do que 2% das empresas listadas nesses clusters tendem a ter retornos negativos após 10 trimestres.
-| 0 2 4 5 7 9 11 12 | Potencial Retorno Negativo              | Menos do que 2% das empresas listadas nesses clusters tiveram retorno positivo em 10 trimestres.
+| 6,10,13,19,17     | Retorno Positivo e Baixa Volatilidade   | Menos de 5% das empresas listadas nesses clusters tendem a ter retornos negativos após 10 trimestres.
+| 0 2 4 5 7 9 11 12 | Potencial Retorno Negativo              | Mais de 90% das empresas listadas nesses clusters tiveram retorno negativo em 10 trimestres.
 
 __Trabalho futuros e conclusões:__
 
